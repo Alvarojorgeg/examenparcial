@@ -29,3 +29,17 @@ if input("\n¿Ver vectores AB y BA? (s/n): ").lower() == "s":
 if input("\n¿Ver distancias A-B y B-A? (s/n): ").lower() == "s":
     print("Distancia A-B:", round(A.distancia(B), 2))
     print("Distancia B-A:", round(B.distancia(A), 2))
+
+    if input("\n¿Saber qué punto está más lejos del origen? (s/n): ").lower() == "s":
+    origen = Punto(0, 0)
+    distancias = { "A": A.distancia(origen), "B": B.distancia(origen), "C": C.distancia(origen) }
+    mas_lejos = max(distancias, key=distancias.get)
+    print("El punto más lejano al origen es:", mas_lejos)
+
+    
+
+    if input("\n¿Crear un rectángulo con A y B? (s/n): ").lower() == "s":
+    r = Rectangulo(A, B)
+    print("Base:", r.base())
+    print("Altura:", r.altura())
+    print("Área:", r.area())
