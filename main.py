@@ -16,3 +16,8 @@ C = pedir_punto("C")
 D = pedir_punto("D")
 
 print(f"\nA = {A}, B = {B}, C = {C}, D = {D}")
+
+if input("\n¿Ver cuadrantes de A, C y D? (s/n): ").lower() == "s":
+    print("A:", A.cuadrante())
+    print("C:", C.cuadrante())
+    print("D:", D.cuadrante())
