@@ -21,3 +21,4 @@ if input("\n¿Ver cuadrantes de A, C y D? (s/n): ").lower() == "s":
     print("A:", A.cuadrante())
     print("C:", C.cuadrante())
     print("D:", D.cuadrante())
+
