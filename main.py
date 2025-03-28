@@ -22,3 +22,10 @@ if input("\n¿Ver cuadrantes de A, C y D? (s/n): ").lower() == "s":
     print("C:", C.cuadrante())
     print("D:", D.cuadrante())
 
+if input("\n¿Ver vectores AB y BA? (s/n): ").lower() == "s":
+    print("Vector AB:", A.vector(B))
+    print("Vector BA:", B.vector(A))
+
+if input("\n¿Ver distancias A-B y B-A? (s/n): ").lower() == "s":
+    print("Distancia A-B:", round(A.distancia(B), 2))
+    print("Distancia B-A:", round(B.distancia(A), 2))
