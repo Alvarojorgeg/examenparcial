@@ -14,3 +14,5 @@ A = pedir_punto("A")
 B = pedir_punto("B")
 C = pedir_punto("C")
 D = pedir_punto("D")
+
+print(f"\nA = {A}, B = {B}, C = {C}, D = {D}")
